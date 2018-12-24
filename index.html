@@ -80,6 +80,21 @@ body {
 	color: white;
 }
 
+.bg-text-box {
+	background-color: rgba(31, 121, 173, 0.4);
+	/* font-weight: bold; */
+	border: 3px solid #f1f1f1;
+	position: absolute;
+	top: 50%;
+	left: 6%;
+	z-index: 2;
+	width: 25%;
+	height: 20%;
+	padding: 10px;
+	text-align: left;
+	color: white;
+}
+
 .parallelogram {
 	width: 200px;
 	height: 150px;
@@ -170,7 +185,7 @@ body {
 	<div class="header-text">
 		<div class="header">
 			<label style="font-size: 50px; font-weight: bold; "><label style="font-family: Times New Roman;">i</label>-AMS</label>
-			(I'm Amol Madhukar Shinde)
+			I'm Amol Madhukar Shinde
 			<br/>
 			<div style="position: absolute; top: 0px; ">
 				<div class="techProfile" style="background-image: url('images/tech/java.png'); left: 0px;">
@@ -222,7 +237,57 @@ body {
 		<p>	
 			I'm a full stack developer having experience in technologies like Java, Angular, jQuery, Selenium, Android, Database. Along with my regular work I've also developed some innovative projects to solve common problems faced by development team including back-end and UI developers.   
 		</p>
+		
+		<p>
+			<span style="font-weight: bold;">Personal Innovative Projects:</span>
+		</p>
+		<p>	
+		</p>
 	</div>
-	<!-- <div class="profileText">This is profile</div> -->
+	<div class="bg-text-box" style="border-radius: 20px 0px 0px 0px; height: 280px;">
+		<a href="https://github.com/i-ams/lyrebird" target="_bzlank" style="color: white; text-decoration: none;">
+		<div class="techProfile" style="background-image: url('images/products/lyrebird.jpg'); left: -142px; top: -3px; border-radius: 20px 0px 20px 0px;">
+			&nbsp;
+		</div>
+		<span style="margin-left: 50px; width: 100%; text-align: center;font-weight: bold; ">Lyrebird - github/lyrebird</span></a>
+			<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			This is a mock-server with some powerful features, using this application we can
+			apply multiple behaviour to the mocked API’s. This can produces different types of
+			responses from mocked api (random response, different response for different input
+			etc.), which will be difficult to produce until and unless API’s are fully developed.
+			This helps UI teams in integration phase or for POC development.
+	</div>
+	
+	<div class="bg-text-box" style="border-radius: 20px 0px 0px 0px; margin-left: 400px; height: 280px;">
+		<span style="margin-left: 50px; width: 100%; text-align: center;font-weight: bold; "></span>
+		<a href="https://github.com/i-ams/eureka-registry-editor" target="_bzlank" style="color: white; text-decoration: none;">
+		<div class="techProfile" style="background-image: url('images/products/registry_editor.png'); left: -142px; top: -3px; border-radius: 20px 0px 20px 0px;">
+			&nbsp;
+		</div>
+		<span style="margin-left:5px; width: 100%; text-align: center;font-weight: bold; ">Eureka Registry Editor - github/ERE</span></a>
+			<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			This tool is very helpful when it comes to debug the microservice without dependent
+			services. Just select from which environment you want to select the micro-service and
+			just import it, that's it, now from your local microservice you call any micro-service from
+			any environment. This solves the problem of running unnecessary services on local
+			mcahine.
+	</div>
+	
+	<div class="bg-text-box" style="border-radius: 20px 0px 0px 0px; margin-left: 800px; height: 280px;">
+		<span style="margin-left: 50px; width: 100%; text-align: center;font-weight: bold; "></span>
+		<a href="https://github.com/i-ams/micro-service-scheduler" target="_bzlank" style="color: white; text-decoration: none;">
+		<div class="techProfile" style="background-image: url('images/products/scheduler.jpg'); left: -142px; top: -3px; border-radius: 20px 0px 20px 0px;">
+			&nbsp;
+		</div>
+		<span style="margin-left:5px; width: 100%; text-align: center;font-weight: bold; ">Micro-Service Scheduler - github/MSS</span></a>
+			<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			This is a tool to add scheduling capability to micro-services. In microservice
+			environment if we want to add a job scheduling to multiple services then each one
+			of them will require the quartz configuration. Also if there is any change in the
+			schedule or if need to disable the job then we need to make the changes to the
+			service and then need to deploy it again. This tool solves this problems by creating
+			centralized service which will be dedicated for the schedule management only using
+			REST API, quartz framework and database.
+	</div>
 </body>
 </html>
