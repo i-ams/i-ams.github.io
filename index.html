@@ -2,316 +2,160 @@
 <head >
 <title>iAMS</title>
 <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href='styles/app.css' rel='stylesheet' type='text/css'>
 <style type="text/css">
-body {
-	font-family: 'Maven Pro', sans-serif;
-}
 
-.background {
-	width: 100%;
-	background-image: url('images/back.jpg');;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 0px;
-	margin: 0px;
-	filter: blur(1px);
-	-webkit-filter: blur(1px);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100%;
-}
-
-.profilePic {
-	width: 150px;
-	height: 150px;
-	background-image: url('images/profile.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 0px;
-	margin: 0px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	border: 5px solid white;
-	position: absolute;
-	z-index: 4;
-	position: absolute;
-	z-index: 4;
-	top: 20px;
-	left: 20px;
-	border-radius: 80px;
-}
-
-.header-text {
-	width: 95%;
-	height: 150px;
-	padding: 0px;
-	margin: 0px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	border: 5px solid white;
-	position: absolute;
-	z-index: 4;
-	top: 20px;
-	left: 20px;
-	border-radius: 80px;
-	background: #DFE2E3;
-	z-index: 3;
-	color: #0B2161;
-}
-
-.header {
-	margin-left: 180px;
-	margin-top: 10px;
-	text-align: center;
-}
-
-.bg-text {
-	background-color: rgba(31, 121, 173, 0.8);
-	/* font-weight: bold; */
-	border: 3px solid #f1f1f1;
-	position: absolute;
-	top: 15%;
-	left: -5px;
-	z-index: 2;
-	width: 90%;
-	height: 90%;
-	padding: 90px;
-	text-align: left;
-	color: white;
-}
-
-.bg-text-box {
-	background-color: rgba(31, 121, 173, 0.4);
-	/* font-weight: bold; */
-	border: 3px solid #f1f1f1;
-	position: absolute;
-	top: 50%;
-	left: 6%;
-	z-index: 2;
-	width: 25%;
-	height: 20%;
-	padding: 10px;
-	text-align: left;
-	color: white;
-}
-
-.parallelogram {
-	width: 200px;
-	height: 150px;
-	transform: skew(-30deg);
-	/* background: red; */
-	position: absolute;
-	left: 500px;
-	top: 0px;;
-}
-
-.fb {
-	background-image: url("images/contact/fb-logo.png");
-	position: absolute;
-	top: 0px;;
-	z-index: 5;
-	height: 100px;
-	width: 100px;
-	background-size: contain;
-	text-decoration: none;
-	left: 42%;
-	top: 20px;
-	background-color: #4F71A8;
-}
-
-.gh {
-	background-image: url("images/contact/gh-logo.png");
-	position: absolute;
-	top: 0px;;
-	z-index: 5;
-	height: 100px;
-	width: 100px;
-	background-size: contain;
-	text-decoration: none;
-	left: 58%;
-	top: 20px;
-	background-repeat: no-repeat;
-}
-
-.ln {
-	background-image: url("images/contact/linkedin.png");
-	position: absolute;
-	top: 0px;;
-	z-index: 5;
-	height: 100px;
-	width: 100px;
-	background-size: contain;
-	text-decoration: none;
-	left: 68%;
-	top: 20px;
-	background-repeat: no-repeat;
-}
-
-.profileText {
-	border: 3px solid #f1f1f1;
-	position: absolute;
-	top: 27%;
-	z-index: 2;
-	left: 8%;
-	width: 80%;
-	height: 65%;
-	padding: 20px;
-	text-align: center;
-	background: white;
-}
-
-.techProfile {
-	width: 50px;
-	height: 50px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 0px;
-	margin-left: 140px;;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	border: 2px solid white;
-	position: absolute;
-	z-index: 4;
-	/* position: absolute; z-index : 4; */
-	top: 90px;
-	border-radius: 25px;
-	background-color: white;
-}
-
-.shadow {
-	box-shadow: 3px 4px 4px gray;
-}
-
-.continue {
-	position: absolute;
-	bottom: 0px;
-	padding: 5px;
-	text-align: right;
-	right: 0px;
-	border-radius: 20px 0px 0px 0px;
-	background-color: white;
-	color: #0B2161;
-	width: 90px;
-	text-align: center;
-}
 </style>
 </head>
-<body style="padding: 0px; margin: 0px; overflow: hidden;" >
-	<div class="background" > </div>
+<body style="padding: 0px; margin: 0px; " >
+	<!-- <div class="background" > </div> -->
 	<div class="profilePic">&nbsp;</div>
 	<div class="header-text">
 		<div class="header">
 			<label style="font-size: 50px; font-weight: bold; "><label style="font-family: Times New Roman;">i</label>-AMS</label>
-			I'm Amol Madhukar Shinde
-			<br/>
-			<div style="position: absolute; top: 0px; ">
-				<div class="techProfile shadow" style="background-image: url('images/tech/java.png'); left: 0px;" title="Java">
-					&nbsp;
-				</div>
-				<div class="techProfile shadow" style="background-image: url('images/tech/spring.png'); left: 60px;" title="Spring">
-					&nbsp;
-				</div>
-				<div class="techProfile shadow" style="background-image: url('images/tech/springboot.png'); left: 120px;;" title="Spring Boot">
-					&nbsp;
-				</div>
-				<div class="techProfile shadow" style="background-image: url('images/tech/angularjs.png'); left: 180px;;" title="Angular JS">
-					&nbsp;
-				</div>
-				<div class="techProfile shadow" style="background-image: url('images/tech/android.png'); left: 240px;;" title="Android">
-					&nbsp;
-				</div>
-				<div class="techProfile shadow" style="background-image: url('images/tech/html.png'); left: 300px;;" title="Html, CSS, Javascript">
-					&nbsp;
-				</div>
-				<div class="techProfile shadow" style="background-image: url('images/tech/jqeury.png'); left: 360px;;" title="jQuery">
-					&nbsp;
-				</div>
-				<div class="techProfile shadow" style="background-image: url('images/tech/selenium.png'); left: 420px;;" title="Selenium">
-					&nbsp;
-				</div>
-				<div class="techProfile shadow" style="background-image: url('images/tech/SQLServer.png'); left: 480px;;" title="MS SQL Server">
-					&nbsp;
-				</div>
-				<div class="techProfile shadow" style="background-image: url('images/tech/mongodb.jpg'); left: 540px;;" title="mongoDB">
-					&nbsp;
-				</div>
-				<div class="techProfile shadow" style="background-image: url('images/tech/postgresql.png'); left: 600px;;" title="PostgreSQL">
-					&nbsp;
-				</div>
-				<div class="techProfile shadow" style="background-image: url('images/tech/mysql.png'); left: 660px;;" title="MySQL">
-					&nbsp;
-				</div>
-			</div>
+			<br/>I'm Amol Madhukar Shinde<br/>
+			<table style="width: 100%;">
+				<tr>
+					<td align="center">
+						<table  >
+							<tr>
+								<td>
+									<i class="material-icons">email</i>
+								</td>
+								<td>
+									amol.shinde.28@gmail.com
+								</td>
+								<td>
+									<i class="material-icons">phone</i>
+								</td>
+								<td>
+									+91 814-944-9343 
+								</td>
+								<td>
+									<i class="material-icons">code</i>
+								</td>
+								<td>
+									<a href="https://github.com/i-ams" style="text-decoration: none;" target="_blank">https://github.com/i-ams</a> 
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
 		</div>
 	</div>
-	<div class="bg-text">
-		<!-- <p>
-			Introduction
-		</p> -->
-		<p>
-			<span style="font-weight: bold;">Introduction:</span>
-		</p>
-		<p>	
-			I'm a full stack developer having experience in technologies like Java, Angular, jQuery, Selenium, Android, Database. Along with my regular work I've also developed some innovative projects to solve common problems to improve application development & debugging.   
-		</p>
-		
-		<p>
-			<span style="font-weight: bold;">Personal Innovative Projects:</span>
-		</p>
-		<p>	
-		</p>
-	</div>
-	<div class="bg-text-box" style="border-radius: 20px 0px 0px 0px; height: 280px;">
-		<a href="https://github.com/i-ams/lyrebird" target="_bzlank" style="color: white; text-decoration: none;">
-		<div class="techProfile" style="background-image: url('images/products/lyrebird.jpg'); left: -142px; top: -3px; border-radius: 20px 0px 20px 0px;">
-			&nbsp;
-		</div>
-		<span style="margin-left: 50px; width: 100%; text-align: center;font-weight: bold; ">Lyrebird - github/lyrebird</span></a>
-			<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			This is a mock-server with some powerful features, using this application we can
-			apply multiple behaviour to the mocked API's. This can produces different types of
-			responses from mocked api (random response, different response for different input
-			etc.), which will be difficult to produce until and unless API's are fully developed.
-			This helps UI teams in integration phase or for POC development.
-		<a href="https://github.com/i-ams/lyrebird" target="_bzlank"><div class="continue">More Info</div></a>
-	</div>
-	
-	<div class="bg-text-box" style="border-radius: 20px 0px 0px 0px; margin-left: 400px; height: 280px;">
-		<span style="margin-left: 50px; width: 100%; text-align: center;font-weight: bold; "></span>
-		<a href="https://github.com/i-ams/eureka-registry-editor" target="_bzlank" style="color: white; text-decoration: none;">
-		<div class="techProfile" style="background-image: url('images/products/registry_editor.png'); left: -142px; top: -3px; border-radius: 20px 0px 20px 0px;">
-			&nbsp;
-		</div>
-		<span style="margin-left:5px; width: 100%; text-align: center;font-weight: bold; ">Eureka Registry Editor - github/ERE</span></a>
-			<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			This tool is very helpful when it comes to debug the microservice without dependent
-			services. Just select from which environment you want to select the micro-service and
-			just import it, that's it, now from your local microservice you call any micro-service from
-			any environment. This solves the problem of running unnecessary services on local
-			machine.
-		<a href="https://github.com/i-ams/eureka-registry-editor" target="_bzlank"><div class="continue">More Info</div></a>	
-	</div>
-	
-	<div class="bg-text-box" style="border-radius: 20px 0px 0px 0px; margin-left: 800px; height: 280px;">
-		<span style="margin-left: 50px; width: 100%; text-align: center;font-weight: bold; "></span>
-		<a href="https://github.com/i-ams/micro-service-scheduler" target="_bzlank" style="color: white; text-decoration: none;">
-		<div class="techProfile" style="background-image: url('images/products/scheduler.jpg'); left: -142px; top: -3px; border-radius: 20px 0px 20px 0px;">
-			&nbsp;
-		</div>
-		<span style="margin-left:5px; width: 100%; text-align: center;font-weight: bold; ">Micro-Service Scheduler - github/MSS</span></a>
-			<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			This is a tool to add scheduling capability to micro-services. In microservice
+	<div style=" top: 0px; padding: 10px; width: 95%; margin-left: 5%">
+		<table id="contentTable" style="width: 90%; " cellspacing="0" >
+			<tr>
+				<td class="label" valign="top">
+					Introduction
+				</td>
+				<td valign="top">	
+					I'm a full stack developer having experience in technologies like Java, Angular, jQuery, Selenium, Android, Database. Along with my regular work I've also developed some innovative projects to solve common problems to improve application development & debugging.
+				</td>
+			</tr>
+			<tr>
+				<td class="label" valign="top">
+					Technologies
+				</td>
+				<td valign="top">
+					<div class="techProfile shadow" style="background-image: url('images/tech/java.png'); left: 0px;" title="Java">
+						&nbsp;
+					</div>
+					<div class="techProfile shadow" style="background-image: url('images/tech/spring.png'); left: 60px;" title="Spring">
+						&nbsp;
+					</div>
+					<div class="techProfile shadow" style="background-image: url('images/tech/springboot.png'); left: 120px;;" title="Spring Boot">
+						&nbsp;
+					</div>
+					<div class="techProfile shadow" style="background-image: url('images/tech/angularjs.png'); left: 180px;;" title="Angular JS">
+						&nbsp;
+					</div>
+					<div class="techProfile shadow" style="background-image: url('images/tech/android.png'); left: 240px;;" title="Android">
+						&nbsp;
+					</div>
+					<div class="techProfile shadow" style="background-image: url('images/tech/html.png'); left: 300px;;" title="Html, CSS, Javascript">
+						&nbsp;
+					</div>
+					<div class="techProfile shadow" style="background-image: url('images/tech/jqeury.png'); left: 360px;;" title="jQuery">
+						&nbsp;
+					</div>
+					<div class="techProfile shadow" style="background-image: url('images/tech/nodejslogo.png'); left: 360px;;" title="jQuery">
+						&nbsp;
+					</div>
+					<div class="techProfile shadow" style="background-image: url('images/tech/selenium.png'); left: 420px;;" title="Selenium">
+						&nbsp;
+					</div>
+					<div class="techProfile shadow" style="background-image: url('images/tech/SQLServer.png'); left: 480px;;" title="MS SQL Server">
+						&nbsp;
+					</div>
+					<div class="techProfile shadow" style="background-image: url('images/tech/mongodb.jpg'); left: 540px;;" title="mongoDB">
+						&nbsp;
+					</div>
+					<div class="techProfile shadow" style="background-image: url('images/tech/postgresql.png'); left: 600px;;" title="PostgreSQL">
+						&nbsp;
+					</div>
+					<div class="techProfile shadow" style="background-image: url('images/tech/mysql.png'); left: 660px;;" title="MySQL">
+						&nbsp;
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="label" valign="top" style="white-space: nowrap; ">
+					Personal Innovative Projects
+				</td>
+				<td valign="top">	
+					<ul>
+					  <li >
+					  	<a href="https://github.com/i-ams/lyrebird" target="_blank" 
+					  		style="font-weight: bold; text-decoration: none;">Lyrebird<br/>
+					  	https://github.com/i-ams/lyrebird</a><p style="margin-top: 2px;">
+					  	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							This is a mock-server with some powerful features, using this application we can
+							apply multiple behaviour to the mocked API's. This can produces different types of
+							responses from mocked api (random response, different response for different input
+							etc.), which will be difficult to produce until and unless API's are fully developed.
+							This helps UI teams in integration phase or for POC development.
+							<a href="https://github.com/i-ams/lyrebird" style="text-decoration: none;" target="_blank">More Info...</a>
+							</p>
+					  	</li>
+			 
+					  	<li >
+						  	<a href="https://github.com/i-ams/eureka-registry-editor" target="_blank" 
+						  		style="font-weight: bold; text-decoration: none;">Eureka Registry Editor<br/>
+						  	https://github.com/i-ams/eureka-registry-editor</a><p style="margin-top: 2px;">
+						  	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								This tool is very helpful when it comes to debug the microservice without dependent
+								services. Just select from which environment you want to select the micro-service and
+								just import it, that's it, now from your local microservice you call any micro-service from
+								any environment. This solves the problem of running unnecessary services on local
+								machine.
+							<a href="https://github.com/i-ams/eureka-registry-editor" style="text-decoration: none;" target="_blank">More Info...</a>
+							</p>
+					  	</li>
+					  	
+					  	<li >
+						  	<a href="https://github.com/i-ams/micro-service-scheduler" target="_blank" 
+						  		style="font-weight: bold; text-decoration: none;">Micro-Service Scheduler<br/>
+						  	https://github.com/i-ams/micro-service-scheduler</a><p style="margin-top: 2px;">
+						  	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								This is a tool to add scheduling capability to micro-services. In microservice
 			environment if we want to add a job scheduling to multiple services then each one
 			of them will require the quartz configuration. Also if there is any change in the
 			schedule or if need to disable the job then we need to make the changes to the
 			service and then need to deploy it again. This tool solves this problems by creating
 			centralized service which will be dedicated for the schedule management only using
 			REST API, quartz framework and database.
-		<a href="https://github.com/i-ams/micro-service-scheduler" target="_bzlank"><div class="continue">More Info</div></a>	
+							<a href="https://github.com/i-ams/micro-service-scheduler" style="text-decoration: none;" target="_blank">More Info...</a>
+							</p>
+					  	</li>
+					</ul>
+					  
+				</td>
+			</tr>			
+		</table>
 	</div>
+	  
 </body>
 </html>
